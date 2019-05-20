@@ -1,0 +1,14 @@
+language: java
+
+before_deploy:
+  - mvn clean verify
+
+deploy:
+  provider: cloudfoundry
+  username: $CF_USERNAME
+  password: $CF_PASSWORD
+  api: $CF_API_HOST
+  organization: $PROMREGATOR_TARGETS_ORGNAME
+  space: $PCF_DEPLOYMENT_SPACE
+  manifest: manifest.yml # (optional)  Defaults to manifest.yml.
+  app_name: ah-poc-promregator # (optional)

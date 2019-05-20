@@ -1,0 +1,5 @@
+---
+applications:
+- name: ah-poc-promregator
+  memory: 768M
+  path: target/promregator-0.6.0-SNAPSHOT.jar
