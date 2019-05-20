@@ -58,4 +58,3 @@ promregator:
 
 cf:
   api_host: api.run.pivotal.io
-  username: jason.costa@zuhlke.com
