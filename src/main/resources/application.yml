@@ -46,3 +46,16 @@ logging:
 #      response: DEBUG
 # For also logging CF token retrieval, you may also add (Warning! This will expose internal and sensitive information in the logs!)
 #      token: DEBUG
+
+promregator:
+  authenticator:
+    type: none
+
+  targets:
+    - orgName: aimless-hammer
+      spaceName: development
+      path: "/actuator/prometheus"
+
+cf:
+  api_host: api.run.pivotal.io
+  username: jason.costa@zuhlke.com
