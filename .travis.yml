@@ -1,5 +1,8 @@
 language: java
 
+script:
+  - echo "Skipping 3rd party tests"
+
 before_deploy:
   - mvn package -DskipTests=true
 
