@@ -5,7 +5,6 @@ script:
 
 before_deploy:
   - mvn package -DskipTests=true
-  - chmod +x create-pcf-manifest.sh
   - ./create-pcf-manifest.sh
 
 deploy:

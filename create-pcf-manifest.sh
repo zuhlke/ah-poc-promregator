@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "---
 applications:
 - name: ah-poc-promregator
