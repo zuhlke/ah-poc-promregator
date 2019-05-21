@@ -5,7 +5,8 @@ script:
 
 before_deploy:
   - mvn package -DskipTests=true
-  - ./create-pcf-manifest
+  - chmod +x create-pcf-manifest.sh
+  - ./create-pcf-manifest.sh
 
 deploy:
   provider: cloudfoundry
