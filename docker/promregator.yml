@@ -1,0 +1,13 @@
+promregator:
+  authenticator:
+    type: none
+
+  targets:
+    - orgName: aimless-hammer
+      spaceName: development
+      path: "/actuator/prometheus"
+
+cf:
+  api_host: api.run.pivotal.io
+  username: ${USERNAME}
+  password: ${PASSWORD}
